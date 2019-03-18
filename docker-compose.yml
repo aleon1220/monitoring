@@ -22,6 +22,7 @@ services:
     links:
       - cadvisor:cadvisor
       - alertmanager:alertmanager
+      - push_gateway:push_gateway
     depends_on:
       - cadvisor
     restart: always
